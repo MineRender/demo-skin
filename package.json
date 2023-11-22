@@ -1,0 +1,24 @@
+{
+  "name": "minerender-demo-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Haylee Schäfer",
+    "url": "https://github.com/inventivetalentDev"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch",
+    "serve": "node build.mjs --serve"
+  },
+  "dependencies": {
+    "minerender": "^2.0.0-alpha.13"
+  },
+  "devDependencies": {
+    "@types/three": "^0.158.2",
+    "esbuild": "^0.19.6",
+    "esbuild-plugin-polyfill-node": "^0.3.0",
+    "three": "^0.158.0"
+  }
+}
