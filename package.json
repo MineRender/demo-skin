@@ -13,7 +13,7 @@
     "serve": "node build.mjs --serve"
   },
   "dependencies": {
-    "minerender": "^2.0.0-alpha.13"
+    "minerender": "^2.0.0-alpha.14"
   },
   "devDependencies": {
     "@types/three": "^0.158.2",
