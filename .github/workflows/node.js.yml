@@ -30,3 +30,4 @@ jobs:
     - run: yarn build
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v2  
+      path: "."
