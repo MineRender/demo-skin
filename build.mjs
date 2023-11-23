@@ -24,5 +24,7 @@ if (args.includes("--watch")) {
         servedir: ".",
     })
 } else {
-    await context.rebuild();
+    context.rebuild().then(() => {
+        context.dispose();
+    })
 }
