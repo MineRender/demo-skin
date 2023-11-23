@@ -30,6 +30,7 @@ jobs:
     - run: yarn build
     - name: Copy Files
       run: |
+        mkdir dist
         cp index.html dist/
         cp demo_shared.css dist/
         cp bundle.js dist/
