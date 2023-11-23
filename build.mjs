@@ -12,7 +12,7 @@ const sharedConfig = {
 const context = await esbuild.context({
     ...sharedConfig,
     platform: 'browser',
-    outfile: "bundle.js",
+    outfile: "dist/bundle.js",
     plugins: [
         polyfillNode({}),
     ],
