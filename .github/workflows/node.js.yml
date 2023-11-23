@@ -32,6 +32,7 @@ jobs:
       run: |
         cp index.html dist/
         cp demo_shared.css dist/
+        cp bundle.js dist/
     - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v2
       with:
