@@ -1,5 +1,5 @@
-import { Renderer, SceneInspector, SkinObject, Skins, OrbitControls } from "minerender";
-import { Intersection, Vector3 } from "three";
+import {Renderer, SceneInspector, SkinObject, Skins, OrbitControls} from "minerender";
+import {Intersection, Vector3} from "three";
 
 console.log("hi");
 
@@ -7,7 +7,8 @@ const renderer = new Renderer({
     camera: {
         near: 1,
         far: 2000,
-        position: [50, 35, 50]
+        position: [-50, 40, -50],
+        lookingAt: [0, 10, 0]
     },
     render: {
         stats: true,
@@ -19,7 +20,7 @@ const renderer = new Renderer({
         enabled: false
     },
     debug: {
-        grid: true,
+        grid: false,
         axes: true
     }
 });
@@ -72,6 +73,7 @@ skinInput.addEventListener("change", () => {
 
 
 const controls = new OrbitControls(renderer.camera, renderer.renderer.domElement);
+controls.target.setY(10);
 renderer.registerEventDispatcher(controls);
 controls.update();
 
